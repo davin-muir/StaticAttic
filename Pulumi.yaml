@@ -1,0 +1,7 @@
+name: atstatic
+runtime:
+  name: python
+  options:
+    virtualenv: venv
+description: A minimal hosting platform that provisions virtual machines for static
+  websites.

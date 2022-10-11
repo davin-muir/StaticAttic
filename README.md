@@ -2,7 +2,7 @@
 A minimal hosting platform for static web apps, built using Python, AWS and the pulumi API.
 
 #### Overview
-The system was designed to programatically provision infrastructure on AWS, allowing users to create virtual machines (with AWS EC2), given three choices for the instance type.Once the VM is deployed, users are able to upload, or write their static files in-app to be hosted on AWS .
+The system programatically provisions virtual machines on EC2; users are given three choices for the instance type. Once the VM is deployed, users can upload, or write their static assets in-app to be hosted on AWS.
 
 #### Setup
 ##### AWS
@@ -36,13 +36,13 @@ Now run:
 ```Windows
 aws configure
 ```
-You'll be prompted to enter some information regarding your AWS account & prefferences, including your access key, default output format, etc.
+You'll be prompted for some information regarding your AWS account & prefferences (access key, default output format, &c.)
 
 Then you'll need to deploy a stack on pulumi by running:
 ```Windows
 pulumi up
 ```
-You'll be prompted to select a stack (if any exists) or to create one.
+You'll be prompted to select a stack (if you've deployed any) or to create one.
 
 #### Generating SSH key/value pairs
 ```Windows
@@ -50,7 +50,7 @@ ssh-keygen -m PEM
 ```
 You'll be prompted to enter some info, or you can use the default ones provided.
 
-##### Now you can run the project, open your terminal:
+##### To run the project:
 ```Windows
 flask un
 ```
